@@ -92,6 +92,7 @@ public class Code {
     public static void main(String[] args) {
         Code code = new Code();
         BufferedImage bufferedImage = code.getBufferImage();
+        //将图片输出的指定目录，并指定格式
         try {
             ImageIO.write(bufferedImage, "jpg", new File("d:/picture/" + new Date().getTime() + ".jpg"));
         } catch (IOException e) {
